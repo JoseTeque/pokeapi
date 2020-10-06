@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img class="img-logo" alt="Logo Pokemon" src="https://fontmeme.com/images/Pokemon-Logo.jpg">
+    <PokeApi msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PokeApi from './components/PokeApi.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PokeApi
   }
 }
 </script>
@@ -23,6 +23,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+ 
+}
+
+#app .img-logo{
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 300px;
 }
 </style>
